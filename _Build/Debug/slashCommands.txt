@@ -1,0 +1,29 @@
+=======
+GENERAL
+=======
+/nick <desired username> - sets your username on this server to whatever you specified.
+/msg <username> <message> - sends a private message to someone else
+/w <username> <message> - same as /msg
+/disconnect - disconnects from the current server
+/stats - displays network statistics
+/afk - toggles afk mode
+
+========
+CHANNELS
+========
+/who - displays who is online in the current channel
+/getchannels - lists available channels on this server
+/changechannel <name> - switch to the specified channel
+
+===============
+USER MANAGEMENT
+===============
+/kick <username> - kicks someone from the server
+/ban <username> <days> - bans someone from the server. The days is optional.
+/mute <username> <time in hours> - assigns someone the "Muted" role Time in hours is optional.
+
+======
+ROLES:
+======
+/setrole <username> <role ID> - assigns someone a certain role, by ID.
+/getroles - shows the available roles on this server and their IDs.

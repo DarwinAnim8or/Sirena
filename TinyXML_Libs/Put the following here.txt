@@ -1,0 +1,3 @@
+Put the compiled .lib files for TinyXML2 here.
+tinyxml2.lib - debug version
+tinyxml2-rel.lib - release version

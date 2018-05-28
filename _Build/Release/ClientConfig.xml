@@ -1,0 +1,12 @@
+<!-- This file is needed by the Sirena client! Do not edit this manually or share any of the info within!! -->
+<ClientConfig>
+	<Names>
+		<NameToken token="" serverToken=""/>
+	</Names>
+	<RecentServers>
+		<RecentServer name="" ip="" port="" lastVisited=""/>
+	</RecentServers>
+	<FavouriteServers>
+		<FavouriteServer name="" ip="" port="" lastVisited=""/>
+	</FavouriteServers>
+</ClientConfig>

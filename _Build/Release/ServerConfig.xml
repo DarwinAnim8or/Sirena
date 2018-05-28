@@ -1,0 +1,50 @@
+<!--
+	Changing your server token is discouraged, as users will lose their nicknames when you do.
+
+	Quick note about ranks, 0 and 9 and reserved.
+	You can rename the ranks, but 9 is always the highest role possible, with 0 being the lowest.
+	Users who execute /getchannels will only be able to see the channels their rank could possibly access.
+	
+	If a user sets a nick/username on your server, their unique ID will be saved here. (It acts like a login token)
+	That way, your server will remember who needs which nickname on your server.
+	Users will be unable to have duplicate names.
+	Please don't mindlessly delete these!
+	
+	Available name colors: white, grey, (dark)red, yellow, (dark)green, (dark)blue
+	Server messages will always be sent in bright yellow.
+	Private messages will always be sent in pink.
+-->
+
+<ServerConfig>
+	<Name value="LBB Test Server"/>
+	<Port value="42069"/>
+	<Motd value="Another day, another test. Be nice!"/>
+	<Token value=""/>
+	<MaxUsers value="10"/>
+	<Channels>
+		<Channel name="General" desc="General chat" isDefault="true" minRank="0"/>
+		<Channel name="Tech_talk" desc="Linux > Windows" isDefault="false" minRank="0"/>
+		<Channel name="Secret" desc="Spoopy" isDefault="false" minRank="1"/>
+		<Channel name="Admin_talk" desc="Admins only!" isDefault="false" minRank="9"/>
+	</Channels>
+	<Ranks>
+		<Rank id="0" name="Muted" isDefault="false" nameColor="grey"/>
+		<Rank id="1" name="Guest" isDefault="true" nameColor="white"/>
+		<Rank id="2" name="Trusted Member" isDefault="false" nameColor="white"/>
+		<Rank id="9" name="Admin" isDefault="false" nameColor="red"/>
+	</Ranks>
+	<Users>
+		<User token="0" name="Darwin" rank="9"/>
+	</Users>
+	<ServerMessages>
+		<ServerMessage id="NewUserJoined" value="has joined the server."/>
+		<ServerMessage id="ExistingUserJoined" value="has joined the server. Welcome back!"/>
+		<ServerMessage id="UserBanned" value="has been banned from the server!"/>
+		<ServerMessage id="UserKicked" value="has been kicked from the server!"/>
+		<ServerMessage id="NewUserJoined" value="was kicked from the server."/>
+		<ServerMessage id="UserTimedOut" value="has lost connection to the server"/>
+		<ServerMessage id="UserDisconnect" value="has disconnected from the server."/>
+		<ServerMessage id="UserChangedChannel" value="has switched to another channel."/>
+		<ServerMessage id="UserRankChanged" value="'s role has been changed to"/>
+	</ServerMessages>
+</ServerConfig>
